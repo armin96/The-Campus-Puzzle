@@ -1,0 +1,252 @@
+{
+  "time_slots": [
+    "Mon-09:00", "Mon-11:00", "Mon-13:00", "Mon-15:00",
+    "Tue-09:00", "Tue-11:00", "Tue-13:00", "Tue-15:00",
+    "Wed-09:00", "Wed-11:00"
+  ],
+  "rooms": [
+    {"room_id": "R-101", "capacity": 30},
+    {"room_id": "R-102", "capacity": 50},
+    {"room_id": "R-103", "capacity": 80},
+    {"room_id": "R-104", "capacity": 100},
+    {"room_id": "R-105", "capacity": 120},
+    {"room_id": "R-106", "capacity": 150},
+    {"room_id": "R-107", "capacity": 200},
+    {"room_id": "R-108", "capacity": 250},
+    {"room_id": "R-109", "capacity": 500}
+  ],
+  "professors": [
+    {"professor_id": "P01", "name": "Dr. Smith"},
+    {"professor_id": "P02", "name": "Dr. Patel"},
+    {"professor_id": "P03", "name": "Dr. Chen"},
+    {"professor_id": "P04", "name": "Dr. Jones"},
+    {"professor_id": "P05", "name": "Dr. Müller"},
+    {"professor_id": "P06", "name": "Dr. Rossi"},
+    {"professor_id": "P07", "name": "Dr. Kim"},
+    {"professor_id": "P08", "name": "Dr. Garcia"},
+    {"professor_id": "P09", "name": "Dr. Okafor"},
+    {"professor_id": "P10", "name": "Dr. Ivanova"}
+  ],
+  "student_groups": {
+    "Y1-CS":   {"name": "Year 1 Computer Science",  "size": 120},
+    "Y2-CS":   {"name": "Year 2 Computer Science",  "size": 100},
+    "Y3-CS":   {"name": "Year 3 Computer Science",  "size": 70},
+    "Y1-MATH": {"name": "Year 1 Mathematics",       "size": 80},
+    "Y2-MATH": {"name": "Year 2 Mathematics",       "size": 80},
+    "Y3-MATH": {"name": "Year 3 Mathematics",       "size": 60},
+    "Y1-ENG":  {"name": "Year 1 Engineering",       "size": 90},
+    "Y2-ENG":  {"name": "Year 2 Engineering",       "size": 95}
+  },
+  "classes": [
+    {
+      "class_id": "CS101",
+      "name": "Intro to Programming",
+      "professor_id": "P01",
+      "enrolled_students": 210,
+      "student_groups": ["Y1-CS", "Y1-ENG"]
+    },
+    {
+      "class_id": "CS102",
+      "name": "Data Structures",
+      "professor_id": "P01",
+      "enrolled_students": 100,
+      "student_groups": ["Y1-CS"]
+    },
+    {
+      "class_id": "CS201",
+      "name": "Algorithms",
+      "professor_id": "P02",
+      "enrolled_students": 100,
+      "student_groups": ["Y2-CS"]
+    },
+    {
+      "class_id": "CS202",
+      "name": "Database Systems",
+      "professor_id": "P02",
+      "enrolled_students": 100,
+      "student_groups": ["Y2-CS"]
+    },
+    {
+      "class_id": "CS203",
+      "name": "Computer Networks",
+      "professor_id": "P03",
+      "enrolled_students": 100,
+      "student_groups": ["Y2-CS"]
+    },
+    {
+      "class_id": "CS204",
+      "name": "Software Engineering",
+      "professor_id": "P03",
+      "enrolled_students": 100,
+      "student_groups": ["Y2-CS"]
+    },
+    {
+      "class_id": "CS301",
+      "name": "Machine Learning",
+      "professor_id": "P04",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "CS302",
+      "name": "Computer Graphics",
+      "professor_id": "P04",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "CS303",
+      "name": "Distributed Systems",
+      "professor_id": "P05",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "CS304",
+      "name": "Artificial Intelligence",
+      "professor_id": "P05",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "CS305",
+      "name": "Cybersecurity",
+      "professor_id": "P05",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "CS306",
+      "name": "Compiler Design",
+      "professor_id": "P04",
+      "enrolled_students": 70,
+      "student_groups": ["Y3-CS"]
+    },
+    {
+      "class_id": "MATH101",
+      "name": "Calculus I",
+      "professor_id": "P06",
+      "enrolled_students": 210,
+      "student_groups": ["Y1-CS", "Y1-ENG"]
+    },
+    {
+      "class_id": "MATH102",
+      "name": "Discrete Mathematics",
+      "professor_id": "P06",
+      "enrolled_students": 190,
+      "student_groups": ["Y1-CS", "Y1-MATH"]
+    },
+    {
+      "class_id": "MATH103",
+      "name": "Calculus II",
+      "professor_id": "P06",
+      "enrolled_students": 90,
+      "student_groups": ["Y1-ENG"]
+    },
+    {
+      "class_id": "MATH201",
+      "name": "Linear Algebra",
+      "professor_id": "P07",
+      "enrolled_students": 170,
+      "student_groups": ["Y2-CS", "Y2-MATH", "Y2-ENG"]
+    },
+    {
+      "class_id": "MATH202",
+      "name": "Probability & Statistics",
+      "professor_id": "P07",
+      "enrolled_students": 80,
+      "student_groups": ["Y2-MATH"]
+    },
+    {
+      "class_id": "MATH203",
+      "name": "Real Analysis",
+      "professor_id": "P08",
+      "enrolled_students": 80,
+      "student_groups": ["Y2-MATH"]
+    },
+    {
+      "class_id": "MATH204",
+      "name": "Numerical Methods",
+      "professor_id": "P08",
+      "enrolled_students": 80,
+      "student_groups": ["Y2-MATH"]
+    },
+    {
+      "class_id": "MATH301",
+      "name": "Abstract Algebra",
+      "professor_id": "P08",
+      "enrolled_students": 60,
+      "student_groups": ["Y3-MATH"]
+    },
+    {
+      "class_id": "MATH302",
+      "name": "Complex Analysis",
+      "professor_id": "P07",
+      "enrolled_students": 60,
+      "student_groups": ["Y3-MATH"]
+    },
+    {
+      "class_id": "MATH303",
+      "name": "Number Theory",
+      "professor_id": "P08",
+      "enrolled_students": 30,
+      "student_groups": ["Y3-MATH"]
+    },
+    {
+      "class_id": "ENG101",
+      "name": "Engineering Mechanics",
+      "professor_id": "P09",
+      "enrolled_students": 110,
+      "student_groups": ["Y1-ENG", "Y1-CS"]
+    },
+    {
+      "class_id": "ENG102",
+      "name": "Circuit Analysis",
+      "professor_id": "P09",
+      "enrolled_students": 95,
+      "student_groups": ["Y1-ENG"]
+    },
+    {
+      "class_id": "ENG103",
+      "name": "Thermodynamics",
+      "professor_id": "P09",
+      "enrolled_students": 80,
+      "student_groups": ["Y1-ENG"]
+    },
+    {
+      "class_id": "ENG201",
+      "name": "Fluid Mechanics",
+      "professor_id": "P10",
+      "enrolled_students": 95,
+      "student_groups": ["Y2-ENG"]
+    },
+    {
+      "class_id": "ENG202",
+      "name": "Signals & Systems",
+      "professor_id": "P10",
+      "enrolled_students": 95,
+      "student_groups": ["Y2-ENG"]
+    },
+    {
+      "class_id": "ENG203",
+      "name": "Control Systems",
+      "professor_id": "P10",
+      "enrolled_students": 95,
+      "student_groups": ["Y2-ENG"]
+    },
+    {
+      "class_id": "ENG301",
+      "name": "Power Systems",
+      "professor_id": "P10",
+      "enrolled_students": 90,
+      "student_groups": ["Y2-ENG", "Y2-CS", "Y2-MATH", "Y3-CS", "Y3-MATH"]
+    },
+    {
+      "class_id": "ENG302",
+      "name": "Digital Signal Processing",
+      "professor_id": "P09",
+      "enrolled_students": 50,
+      "student_groups": ["Y2-ENG", "Y2-CS", "Y2-MATH", "Y3-CS", "Y3-MATH"]
+    }
+  ]
+}
